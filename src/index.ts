@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import OpenAI from "openai";
 import readline from 'readline';
 import { createAssistant } from './openai/createAssistant.js';
@@ -7,6 +6,10 @@ import { createRun } from './openai/createRun.js';
 import { performRun } from './openai/performRun.js';
 import { Thread } from 'openai/resources/beta/threads/threads';
 import { Assistant } from 'openai/resources/beta/assistants';
+import { config } from "dotenv"
+
+
+config()
 
 const client = new OpenAI();
 

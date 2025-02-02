@@ -9,6 +9,7 @@ import { deployErc20Tool } from './deployErc20.js';
 import { uniswapV3CreatePoolTool } from './uniswapV3createPool.js';
 import { approveTokenAllowanceTool } from './approveTokenAllowance.js';
 import { getTokenBalanceTool } from './getTokenBalance.js';
+import { sayHiTool } from './sayHiTool.js';
 
 export interface ToolConfig<T = any> {
     definition: {
@@ -43,5 +44,6 @@ export const tools: Record<string, ToolConfig> = {
     create_uniswap_v3_pool: uniswapV3CreatePoolTool,
     approve_token_allowance: approveTokenAllowanceTool,
 
+    say_hi: sayHiTool
     // Add more tools here...
 };

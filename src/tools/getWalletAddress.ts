@@ -1,4 +1,4 @@
-import { Address } from 'viem';
+import { Address, Hex } from 'viem';
 import { createViemWalletClient } from '../viem/createViemWalletClient.js';
 import { ToolConfig } from './allTools.js';
 
